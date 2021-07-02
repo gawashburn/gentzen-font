@@ -1,0 +1,12 @@
+OTFTOFD=$(HOME)/joint-work/otftofd/otftofd
+NAME=gentzen10
+
+clean:
+	$(RM) *.fd *.tfm *.enc *.map
+
+.PHONY: all clean
+
+.DEFAULT:
+        $(RM) a_*.enc GentzenMathematics.pfb
+	$(OTFTOFD) --enc=U --encFile=gentzen-sym.enc --fsuffix=-sym gentzen10.otf 
+#	$(OTFTOFD) --enc=U --encFile=gentzen-sym.enc --fsuffix=-frak gentzen10.otf 

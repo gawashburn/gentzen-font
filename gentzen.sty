@@ -1,0 +1,302 @@
+%% This is file `gentzen.sty', Copyright (C) 2007 Geoffrey Washburn
+
+%% Based upon the file `euler.sty', generated using docstrip from `euler.dtx'.
+%% The copyright for `euler.dtx' is as follows
+%% Copyright (C) 1992 Frank Jensen.  All rights reserved.
+%% Copyright (C) 1993--1995 Frank Jensen and Frank Mittelbach.
+%% All rights reserved.
+
+\def\fileversion{v1}
+\def\filedate{2007/11/01}
+\NeedsTeXFormat{LaTeX2e}[1994/12/01]
+\ProvidesPackage{gentzen}[\filedate\space\fileversion]
+\typeout{Package: `gentzen' \fileversion\space <\filedate>}
+\DeclareSymbolFont{GentzenSym}{U}{gentzen10-sym}{m}{n}
+\DeclareSymbolFont{letters}{U}{gentzen10-sym}{m}{n}
+
+\DeclareMathSymbol\Gamma  \mathord{GentzenSym}{"80}
+\DeclareMathSymbol\Delta  \mathord{GentzenSym}{"81}
+\DeclareMathSymbol\Theta  \mathord{GentzenSym}{"82}
+\DeclareMathSymbol\Lambda \mathord{GentzenSym}{"83}
+\DeclareMathSymbol\Xi     \mathord{GentzenSym}{"84}
+\DeclareMathSymbol\Pi     \mathord{GentzenSym}{"85}
+\DeclareMathSymbol\Sigma  \mathord{GentzenSym}{"86}
+\DeclareMathSymbol\Upsilon\mathord{GentzenSym}{"87}
+\DeclareMathSymbol\Phi    \mathord{GentzenSym}{"88}
+\DeclareMathSymbol\Psi    \mathord{GentzenSym}{"89}
+\DeclareMathSymbol\Omega  \mathord{GentzenSym}{"8A}
+\DeclareMathSymbol\tau  \mathord{GentzenSym}{"8B}
+\DeclareMathSymbol\rho  \mathord{GentzenSym}{"8C}
+\DeclareMathSymbol\sigma  \mathord{GentzenSym}{"8D}
+\DeclareMathSymbol\pi  \mathord{GentzenSym}{"8E}
+\DeclareMathSymbol\alpha  \mathord{GentzenSym}{"8F}
+\DeclareMathSymbol\beta  \mathord{GentzenSym}{"90}
+\DeclareMathSymbol\delta  \mathord{GentzenSym}{"91}
+\DeclareMathSymbol\gamma  \mathord{GentzenSym}{"92}
+\DeclareMathSymbol\phi  \mathord{GentzenSym}{"93}
+\DeclareMathSymbol\psi  \mathord{GentzenSym}{"94}
+\DeclareMathSymbol\theta  \mathord{GentzenSym}{"95}
+\DeclareMathSymbol\zeta  \mathord{GentzenSym}{"96}
+\DeclareMathSymbol\xi \mathord{GentzenSym}{"97}
+\DeclareMathSymbol\omega \mathord{GentzenSym}{"98}
+\DeclareMathSymbol\lambda \mathord{GentzenSym}{"99}
+\DeclareMathSymbol\nu \mathord{GentzenSym}{"9A}
+\DeclareMathSymbol\mu \mathord{GentzenSym}{"9D}
+\DeclareMathSymbol\kappa \mathord{GentzenSym}{"9B}
+\DeclareMathSymbol\eta  \mathord{GentzenSym}{"9C}
+
+\DeclareMathSymbol\ell  \mathord{GentzenSym}{"1C}
+\let\varsigma=\sigma
+\let\varrho=\rho
+\DeclareSymbolFont{EulerFraktur}{U}{gentzen10-fraktur}{m}{n}
+
+\DeclareMathSymbol{0}\mathalpha{GentzenSym}{"30}
+\DeclareMathSymbol{1}\mathalpha{GentzenSym}{"31}
+\DeclareMathSymbol{2}\mathalpha{GentzenSym}{"32}
+\DeclareMathSymbol{3}\mathalpha{GentzenSym}{"33}
+\DeclareMathSymbol{4}\mathalpha{GentzenSym}{"34}
+\DeclareMathSymbol{5}\mathalpha{GentzenSym}{"35}
+\DeclareMathSymbol{6}\mathalpha{GentzenSym}{"36}
+\DeclareMathSymbol{7}\mathalpha{GentzenSym}{"37}
+\DeclareMathSymbol{8}\mathalpha{GentzenSym}{"38}
+\DeclareMathSymbol{9}\mathalpha{GentzenSym}{"39}
+
+% Hack for one mathcal symbol
+\DeclareMathSymbol{\mathcalL}\mathalpha{GentzenSym}{"D0}
+
+\DeclareSymbolFontAlphabet\mathfrak{EulerFraktur}
+\@ifpackageloaded{amsfonts}{}{\newcommand\frak{\mathfrak}}
+\DeclareMathSymbol{!}\mathord  {GentzenSym}{"21}
+\DeclareMathSymbol{+}\mathbin  {GentzenSym}{"2B}
+\DeclareMathSymbol{*}\mathord  {GentzenSym}{"2A}
+\DeclareMathSymbol\times\mathbin  {GentzenSym}{"14}
+\DeclareMathSymbol{-}\mathbin  {GentzenSym}{"2D}
+\DeclareMathSymbol\sqcup\mathbin  {GentzenSym}{"0E}
+\DeclareMathSymbol\cup\mathbin  {GentzenSym}{"A1}
+\DeclareMathSymbol\cap\mathbin  {GentzenSym}{"A0}
+\DeclareMathSymbol\foob\mathopen {GentzenSym}{"F8}
+\DeclareMathSymbol{(}\mathopen {GentzenSym}{"28}
+\DeclareMathSymbol{)}\mathclose{GentzenSym}{"29}
+\DeclareSymbolFont{EulerScript}{U}{eus}{m}{n}
+\DeclareSymbolFont{EulerExtension}{U}{euex}{m}{n}
+\DeclareMathDelimiter\lbrace\mathopen{GentzenSym}{"7B}{GentzenSym}{"F8}
+\DeclareMathDelimiter\rbrace\mathclose{GentzenSym}{"7D}{GentzenSym}{"F9}
+\DeclareMathSymbol{/}\mathord{GentzenSym}{"2F}
+\let\backslash=\relax
+\DeclareMathSymbol\backslash\mathord{GentzenSym}{"5C}
+\DeclareMathSymbol{=}\mathrel  {GentzenSym}{"3D}
+\let\neq=\relax
+\DeclareMathSymbol\neq\mathrel  {GentzenSym}{"A5} 
+\DeclareMathSymbol\bnf\mathrel  {GentzenSym}{"23}
+\DeclareMathSymbol{[}\mathopen {GentzenSym}{"5B}
+\DeclareMathSymbol{]}\mathclose{GentzenSym}{"5D}
+\let\langle=\relax
+\let\rangle=\relax
+\DeclareMathSymbol\langle\mathopen {GentzenSym}{"06}
+\DeclareMathSymbol\rangle\mathclose{GentzenSym}{"07}
+\DeclareMathSymbol\llbracket\mathopen {GentzenSym}{"01}
+\DeclareMathSymbol\rrbracket\mathclose{GentzenSym}{"02}
+\DeclareMathSymbol\emptyset\mathord  {GentzenSym}{"08}
+\DeclareMathSymbol\star         \mathbin{GentzenSym}{"1B}
+\DeclareMathSymbol\circ         \mathbin{GentzenSym}{"16}
+\DeclareMathSymbol\forall\mathord  {GentzenSym}{"0F}
+\DeclareMathSymbol\exists\mathord  {GentzenSym}{"10}
+\DeclareMathSymbol\bullet\mathord  {GentzenSym}{"18}
+\DeclareMathSymbol\cdot\mathord  {GentzenSym}{"19}
+\DeclareMathSymbol\top\mathord  {GentzenSym}{"09}
+\DeclareMathSymbol\bot\mathord  {GentzenSym}{"0A}
+\DeclareMathSymbol\qedsymbol\mathord  {GentzenSym}{"A4}
+\DeclareMathSymbol\vdash\mathrel{GentzenSym}{"1F}
+\DeclareMathSymbol\in\mathrel{GentzenSym}{"1E}
+\DeclareMathSymbol{<}\mathrel{GentzenSym}{"3C}
+\DeclareMathSymbol{>}\mathrel{GentzenSym}{"3E}
+\DeclareMathSymbol\preceq\mathrel{GentzenSym}{"A2}
+\DeclareMathSymbol\leq\mathrel{GentzenSym}{"15}
+\DeclareMathSymbol\sqsubseteq\mathrel{GentzenSym}{"11}
+\DeclareMathSymbol\notsqsubseteq\mathrel{GentzenSym}{"17}
+\DeclareMathSymbol\geq\mathrel{GentzenSym}{"00}
+\DeclareMathSymbol\triangleq\mathrel{GentzenSym}{"03}
+\DeclareMathSymbol\approx     \mathrel{GentzenSym}{"04}
+\DeclareMathSymbol\sim     \mathrel{GentzenSym}{"05}
+\let\uparrow=\relax
+\let\rightarrow=\relax
+\let\longrightarrow=\relax
+\let\leftrightarrow=\relax
+\let\implies=\relax
+\DeclareMathSymbol\Rightarrow    \mathrel{GentzenSym}{"13}
+\DeclareMathSymbol\uparrow    \mathrel{GentzenSym}{"0B}
+\DeclareMathSymbol\rightarrow    \mathrel{GentzenSym}{"0C}
+\DeclareMathSymbol\longrightarrow    \mathrel{GentzenSym}{"1D}
+\DeclareMathSymbol\implies    \mathrel{GentzenSym}{"A3}
+\DeclareMathSymbol\leftrightarrow\mathrel{GentzenSym}{"0D}
+\let\leadsto=\relax
+\DeclareMathSymbol\leadsto    \mathrel{GentzenSym}{"1A}
+\let\mapsto=\relax
+\DeclareMathSymbol\mapsto    \mathrel{GentzenSym}{"12}
+\let\ldotp=.
+\DeclareMathSymbol{"}\mathord  {EulerFraktur}{"7D}
+\DeclareMathSymbol{&}\mathord  {EulerFraktur}{"26}
+\DeclareMathSymbol{.}\mathord  {GentzenSym}{"2E}
+\DeclareMathSymbol{,}\mathord  {GentzenSym}{"2C}
+\DeclareMathSymbol{:}\mathrel  {GentzenSym}{"3A}
+\DeclareMathSymbol{;}\mathord{GentzenSym}{"3A}
+\DeclareMathSymbol\semi\mathpunct{GentzenSym}{"3B}
+\DeclareMathSymbol{?}\mathord  {GentzenSym}{"3F}
+\DeclareMathSymbol{^}\mathord  {EulerFraktur}{"5E}
+\DeclareMathSymbol{`}\mathord  {EulerFraktur}{"12}
+
+\SetSymbolFont{EulerScript}{bold}{U}{eus}{b}{n}
+\newcommand\scr{\mathscr}
+\DeclareOption{mathcal}{\renewcommand\mathcal{\mathscr}}
+\DeclareMathSymbol\aleph\mathord{EulerScript}{"40}
+\DeclareMathSymbol\Re   \mathord{EulerScript}{"3C}
+\DeclareMathSymbol\Im   \mathord{EulerScript}{"3D}
+\DeclareMathDelimiter\vert
+                 \mathord{EulerScript}{"6A}{largesymbols}{"0C}
+\DeclareMathSymbol{|}\mathord{GentzenSym}{"7C}
+
+\DeclareMathSymbol\neg     \mathord{EulerScript}{"3A}
+\let\lnot=\neg
+\DeclareMathSymbol\wedge   \mathbin{EulerScript}{"5E}
+\let\land=\wedge
+\DeclareMathSymbol\vee     \mathbin{EulerScript}{"5F}
+\let\lor=\vee
+\DeclareMathSymbol\setminus\mathbin{EulerScript}{"6E}
+\DeclareMathSymbol\mid     \mathrel{EulerScript}{"6A}
+\DeclareMathDelimiter\arrowvert
+        \mathord{EulerScript}{"6A}{largesymbols}{"3C} % ???
+\DeclareMathSymbol\mathsection\mathord{EulerScript}{"78}
+\@ifpackageloaded{amsmath}
+   {\DeclareMathSymbol\coprod@\mathop{EulerExtension}{"60}%
+    \DeclareMathSymbol\prod@  \mathop{EulerExtension}{"51}%
+    \DeclareMathSymbol\sum@   \mathop{EulerExtension}{"50}}
+   {\DeclareMathSymbol\coprod \mathop{EulerExtension}{"60}%
+    \DeclareMathSymbol\prod   \mathop{EulerExtension}{"51}%
+    \DeclareMathSymbol\sum    \mathop{EulerExtension}{"50}}
+\AtBeginDocument
+   {\@ifpackageloaded{amstex}%
+       {\PackageWarningNoLine{euler}{Please do not use `amstex'.
+                 Use `amsmath' instead}{}}}
+\DeclareMathSymbol\intop  \mathop {EulerExtension}{"52}
+\DeclareMathSymbol\ointop \mathop {EulerExtension}{"48}
+\DeclareMathSymbol\braceld\mathord{EulerExtension}{"7A}
+\DeclareMathSymbol\bracerd\mathord{EulerExtension}{"7B}
+\DeclareMathSymbol\bracelu\mathord{EulerExtension}{"7C}
+\DeclareMathSymbol\braceru\mathord{EulerExtension}{"7D}
+\DeclareMathSymbol\infty  \mathord{EulerExtension}{"31}
+\AtBeginDocument
+   {\@ifpackageloaded{amsmath}%
+       {\def\intkern@{\mkern -6mu }%
+        \def\ints@#1{\mkern -3mu
+           \mathop{\mkern 3mu
+              \intop
+              \ifnum #1=\z@ \intdots@ \else
+                 \intkern@
+                 \ifnum #1>\tw@ \intop\intkern@
+                    \ifnum #1>\thr@@ \intop\intkern@ \fi
+                 \fi
+              \fi
+              \intop
+           }\ilimits@
+        }%
+       }{}}
+\DeclareMathSymbol\nearrow\mathrel{EulerExtension}{"25}
+\DeclareMathSymbol\searrow\mathrel{EulerExtension}{"26}
+\DeclareMathSymbol\nwarrow\mathrel{EulerExtension}{"2D}
+\DeclareMathSymbol\swarrow\mathrel{EulerExtension}{"2E}
+\DeclareMathSymbol\Leftrightarrow\mathrel{EulerExtension}{"2C}
+\DeclareMathSymbol\Leftarrow     \mathrel{EulerExtension}{"28}
+\DeclareMathSymbol\leftarrow     \mathrel{EulerExtension}{"20}
+%\let\gets=\leftarrow
+%\let\to=\rightarrow
+\DeclareMathDelimiter\downarrow
+              \mathrel{EulerExtension}{"23}{largesymbols}{"79}
+\DeclareMathDelimiter\updownarrow
+              \mathrel{EulerExtension}{"6C}{largesymbols}{"3F}
+\DeclareMathDelimiter\Uparrow
+              \mathrel{EulerExtension}{"2A}{largesymbols}{"7E}
+\DeclareMathDelimiter\Downarrow
+              \mathrel{EulerExtension}{"2B}{largesymbols}{"7F}
+\DeclareMathDelimiter\Updownarrow
+              \mathrel{EulerExtension}{"6D}{largesymbols}{"77}
+\DeclareMathSymbol\leftharpoonup   \mathrel{EulerExtension}{"18}
+\DeclareMathSymbol\leftharpoondown \mathrel{EulerExtension}{"19}
+\DeclareMathSymbol\rightharpoonup  \mathrel{EulerExtension}{"1A}
+\DeclareMathSymbol\rightharpoondown\mathrel{EulerExtension}{"1B}
+\DeclareMathAlphabet\cm@equals@alphabet{OT1}{cmr}{m}{n}
+\DeclareMathAlphabet\cm@minus@alphabet{OMS}{cmsy}{m}{n}
+\def\Relbar{\mathrel{\cm@equals@alphabet{\mathchar"703D}}}
+\def\cm@minus{{\cm@minus@alphabet{\mathchar"7000}}}
+\def\relbar{\mathrel{\smash\cm@minus}}
+\DeclareSymbolFont{cmmigroup}{OML}{cmm}{m}{it}
+\SetSymbolFont{cmmigroup}{bold}{OML}{cmm}{b}{it}
+\DeclareMathAccent\vec          \mathord{cmmigroup}{"7E}
+\DeclareMathSymbol\triangleleft \mathbin{cmmigroup}{"2F}
+\DeclareMathSymbol\triangleright\mathbin{cmmigroup}{"2E}
+\DeclareMathSymbol\lhook        \mathrel{cmmigroup}{"2C}
+\DeclareMathSymbol\rhook        \mathrel{cmmigroup}{"2D}
+\DeclareMathSymbol\flat         \mathord{cmmigroup}{"5B}
+\DeclareMathSymbol\natural      \mathord{cmmigroup}{"5C}
+\DeclareMathSymbol\sharp        \mathord{cmmigroup}{"5D}
+\DeclareMathSymbol\smile        \mathrel{cmmigroup}{"5E}
+\DeclareMathSymbol\frown        \mathrel{cmmigroup}{"5F}
+\begingroup
+   \catcode`\'=\active
+   \gdef'{^\bgroup\mskip2mu\prim@s} % more space before '
+\endgroup
+\newif\ifCorkEncoding
+\edef\@tempa{\encodingdefault}\def\@tempb{T1}
+\ifx\@tempa\@tempb
+   \CorkEncodingtrue
+\else
+   \CorkEncodingfalse
+\fi
+\ifCorkEncoding
+  \AtBeginDocument
+    {\DeclareSymbolFont{operators}{T1}\rmdefault\mddefault\updefault
+     \SetSymbolFont{operators}{bold}{T1}\rmdefault\bfdefault\updefault
+     \DeclareMathAlphabet\mathbf{T1}\rmdefault\bfdefault\updefault
+     \DeclareMathAlphabet\mathsf{T1}\sfdefault\mddefault\updefault
+     \DeclareMathAlphabet\mathit{T1}\rmdefault\mddefault\itdefault
+     \DeclareMathAlphabet\mathtt{T1}\ttdefault\mddefault\updefault
+     \SetMathAlphabet\mathsf{bold}{T1}\sfdefault\bfdefault\updefault
+     \SetMathAlphabet\mathit{bold}{T1}\rmdefault\bfdefault\itdefault}
+\else
+  \AtBeginDocument
+    {\DeclareSymbolFont{operators}{OT1}\rmdefault\mddefault\updefault
+     \SetSymbolFont{operators}{bold}{OT1}\rmdefault\bfdefault\updefault
+     \DeclareMathAlphabet\mathbf{OT1}\rmdefault\bfdefault\updefault
+     \DeclareMathAlphabet\mathsf{OT1}\sfdefault\mddefault\updefault
+     \DeclareMathAlphabet\mathit{OT1}\rmdefault\mddefault\itdefault
+     \DeclareMathAlphabet\mathtt{OT1}\ttdefault\mddefault\updefault
+     \SetMathAlphabet\mathsf{bold}{OT1}\sfdefault\bfdefault\updefault
+     \SetMathAlphabet\mathit{bold}{OT1}\rmdefault\bfdefault\itdefault}
+\fi
+\ifCorkEncoding
+   \DeclareMathAccent\grave\mathalpha{operators}{"00}
+   \DeclareMathAccent\acute\mathalpha{operators}{"01}
+   \DeclareMathAccent\tilde\mathalpha{operators}{"03}
+   \DeclareMathAccent\ddot \mathalpha{operators}{"04}
+   \DeclareMathAccent\check\mathalpha{operators}{"07}
+   \DeclareMathAccent\breve\mathalpha{operators}{"08}
+   \DeclareMathAccent\bar  \mathalpha{operators}{"09}
+   \DeclareMathAccent\dot  \mathalpha{operators}{"0A}
+\fi
+\DeclareMathAccent\hat\mathalpha{EulerFraktur}{"5E}
+\DeclareOption{text-hat-accent}
+   {\ifCorkEncoding
+       \DeclareMathAccent\hat\mathalpha{operators}{"02}%
+    \else
+       \DeclareMathAccent\hat\mathalpha{operators}{"5E}%
+    \fi}
+\ifCorkEncoding
+   \DeclareMathSymbol\euler@hbar\mathord{operators}{"09}
+\else
+   \DeclareMathSymbol\euler@hbar\mathord{operators}{"16}
+\fi
+\def\hbar{{\euler@hbar\mkern-8muh}}
+\def\@makefnmark{\hbox{$\operator@font^{\@thefnmark}\m@th$}}
+\ProcessOptions
+\endinput
+%% 
+%% End of file `gentzen.sty'.

@@ -1,0 +1,57 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_wdjieqptrzy7aw4we6mj2drvyg
+% Encoding created by otftotfm on Fri Oct  5 22:17:36 2007
+% Command line follows encoding
+/AutoEnc_wdjieqptrzy7aw4we6mj2drvyg [
+%00
+  % FIX! 00 should be .notdef
+  /uni2265 /uni27E6 /uni27E7 /uni225C /approxequal /similar /langle /rangle
+  /uni2205 /uni22A4 /uni22A5 /arrowup /arrowright /arrowboth /uni2294 /universal
+%10
+  /existential /subsetsqequal /uni21A6 /uni21D2 /multiply /lessequal /uni25E6 /uni22E2
+  /uni2022 /uni2219 /uni219D /uni22C6 /lscript /arrowright.long /element /uni22A2
+%20
+  /space /exclam /quotedbl /uni2A74 /uni2026 /.notdef /ampersand /.notdef
+  /parenleft /parenright /asterisk /plus /comma /minus /period /slash
+%30
+  /zero.onum /one.onum /two.onum /three.onum /four.onum /five.onum /six.onum /seven.onum
+  /eight.onum /nine.onum /colon /semicolon /less /equal /greater /question
+%40
+  /at /A /B /C /D /E /F /G
+  /H /I /J /K /L /M /N /O
+%50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /.notdef
+%60
+  /.notdef /a /b /c /d /e /f /g
+  /h /i /j /k /l /m /n /o
+%70
+  /p /q /r /s /t /u /v /w
+  /x /y /z /braceleft /bar /braceright /.notdef /.notdef
+%80
+  /Gamma /Delta /Theta /Lambda /Xi /Pi /Sigma /Upsilon
+  /Phi /Psi /Omega /tau /rho /sigma /pi /alpha 
+%90
+  /beta /delta /gamma /phi /psi /theta /zeta /xi
+  /omega /lambda /nu /kappa /eta /mu /.notdef /.notdef
+%A0
+  /intersection /union /uni227C /arrowdblright.long /qed /uni2260 /.notdef /.notdef
+  /.notdef /quotesingle /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%B0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /bullet
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%C0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%D0
+  /L.alt /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /dotlessi /.notdef /.notdef
+  /braceleft.Big /braceright.Big /braceleft.bigg /braceright.bigg /braceleft.Bigg /braceright.Bigg /.notdef /.notdef
+] def
+% Command line: 'otftotfm -e - gentzen10.otf -fkern U-gentzen10-fkern'
